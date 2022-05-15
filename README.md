@@ -12,3 +12,4 @@ A lightweight reaction role Discord bot using slash commands, meant to be a mult
 **Dependencies:**
 - python3
 - discord.py
+- dotenv
