@@ -14,3 +14,7 @@ A lightweight reaction role Discord bot using slash commands, meant to be a mult
 - discord.py
 - discord-py-slash
 - python-dotenv
+
+**To Do List:**
+- Add ability to set reminders
+- Add ability to set automatic welcoming and leaving messages for your server
