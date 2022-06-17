@@ -1,46 +1,25 @@
 import discord
-import discord_slash
-from discord_slash.utils.manage_commands import create_option
+from discord.ext import slash
 import os
 import dotenv
 import json
-dotenv.load_dotenv()
+#import sqlite3
 
+dotenv.load_dotenv()
 TOKEN = os.environ['TOKEN']
 f = open("save.json","r+")
 allReactionRole = json.load(f)
-bot = discord.Client(intents=discord.Intents().all())
-command = discord_slash.SlashCommand(bot, sync_commands=True)
+#con = sqlite3.connect('save.db')
+bot = slash.SlashBot(command_prefix="!",intents=discord.Intents().all())
 
-@command.slash(name = "reactionroleset", description = "Set reaction roles for a specific message",options = [
-        create_option(
-            name = "message",
-            description = "Type the ID of the message you wish to use",
-            option_type = 3,
-            required = True
-        ),
-        create_option(
-            name = "channel",
-            description = "Channel where the message is located",
-            option_type = 7,
-            required = True
-        ),
-        create_option(
-                    name="reaction",
-                    description = "Type the emoji you wish to use",
-                    required = True,
-                    option_type = 3
-        ),
-        create_option(
-                    name = "role",
-                    description = "Ping the role you wish to use",
-                    required = True,
-                    option_type = 8
-        )
-    ]
-)
+messageOpt = slash.Option(description='Type the ID of the message you wish to use',type=3,required=True)
+channelOpt = slash.Option(description='Channel where the message is located',type=7,required=True)
+reactionOpt = slash.Option(description='Type the emoji you wish to use',type=3,required=True)
+roleOpt = slash.Option(description='Ping the role you wish to use',type=8,required=True)
 
-async def reactionroleset(ctx, message, channel, reaction, role):
+@bot.slash_cmd()
+async def reactionroleset(ctx: slash.Context, message: messageOpt, channel: channelOpt, reaction: reactionOpt, role: roleOpt):
+    """Create a new reaction role"""
     emoji=bot.get_emoji(reaction)
     reactionrole = {"message":message,"channel":channel.id,"reaction":reaction,"role":role.id}
     allReactionRole["reactionrole"].append(reactionrole)
@@ -48,7 +27,7 @@ async def reactionroleset(ctx, message, channel, reaction, role):
     json.dump(allReactionRole,f)
     f.truncate()
     full_message = await channel.fetch_message(int(message))
-    await ctx.send(content="Reaction role added!")
+    await ctx.respond("Reaction role added!")
     await full_message.add_reaction(reaction)
 
 @bot.event
