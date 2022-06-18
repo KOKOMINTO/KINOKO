@@ -18,5 +18,6 @@ A lightweight reaction role Discord bot using slash commands, meant to be a mult
 - [x] Add ability to set reaction roles with both default and custom emojis  
 - [x] Replace the use of discord-py-slash with discord-ext-slash 
 - [ ] Replace the current .json save system with a SQL database
-- [ ] Add ability to set reminders
+- [ ] Add ability to set one-time reminders
+- [ ] Add ability to set repeated reminders
 - [ ] Add ability to set automatic welcoming and leaving messages for your server
