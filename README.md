@@ -5,9 +5,8 @@ A lightweight reaction role Discord bot using slash commands, meant to be a mult
 - /setreactionrole (message)(channel)(reaction)(role)
 
 **Compilation:**
-- Rename template.env as just .env
-- Replace the token inside by a valid one
-- ```python3 main.py```
+- Rename template.env as just .env and replace the token inside by a valid one
+- Run ```python3 main.py```
 
 **Dependencies:**
 - python3
@@ -15,6 +14,9 @@ A lightweight reaction role Discord bot using slash commands, meant to be a mult
 - discord-ext-slash
 - python-dotenv
 
-**To Do List:**
-- Add ability to set reminders
-- Add ability to set automatic welcoming and leaving messages for your server
+**Roadmap:**
+- [x] Add ability to set reaction roles with both default and custom emojis  
+- [x] Replace the use of discord-py-slash with discord-ext-slash 
+- [ ] Replace the current .json save system with a SQL database
+- [ ] Add ability to set reminders
+- [ ] Add ability to set automatic welcoming and leaving messages for your server
