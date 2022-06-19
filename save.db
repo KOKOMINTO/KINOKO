@@ -1,0 +1,6 @@
+CREATE TABLE "ReactionRole" (
+	"channel"	TEXT,
+	"message"	TEXT,
+	"emoji"	TEXT,
+	"role"	TEXT
+)
