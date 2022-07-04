@@ -1,5 +1,6 @@
 # Kinoko
 A lightweight reaction role Discord bot using slash commands, meant to be a multi-purpose bot in the future. You can also use it as a base for your own!
+Hosted by the awesome @Annwan
 
 **Current available commands:**
 - /setreactionrole (message)(channel)(reaction)(role)
