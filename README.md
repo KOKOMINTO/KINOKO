@@ -8,7 +8,7 @@ Hosted by the awesome [@Annwan](https://github.com/Annwan)
 
 **Compilation:**
 - Rename template.env as just .env and replace the token inside by a valid one
-- Create the database (```sqlite3 Kinoko.db``` ,which can be used )
+- Create the database (```sqlite3 Kinoko.db```)
 - Run the sql script (```.read directory/of/source_code/init.sql```)
 - Run ```python3 main.py```
 
@@ -23,6 +23,6 @@ Hosted by the awesome [@Annwan](https://github.com/Annwan)
 - [x] Add ability to set reaction roles with both default and custom emojis  
 - [x] Replace the use of discord-py-slash with discord-ext-slash 
 - [x] Replace the current .json save system with a SQL database
-- [ ] Add ability to set one-time reminders
+- [x] Add ability to set one-time reminders (WIP)
 - [ ] Add ability to set repeated reminders
 - [ ] Add ability to set automatic welcoming and leaving messages for your server
