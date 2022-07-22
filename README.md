@@ -12,7 +12,7 @@ Hosted by the awesome [@Annwan](https://github.com/Annwan)
 **Compilation:**
 - Rename template.env as just .env and replace the token inside by a valid one
 - Create the database (```sqlite3 Kinoko.db```)
-- Run the sql script (```.read directory/of/source_code/init.sql```)
+- Run the sql script (```.read directory/of/source_code/init.sql``` while in a sqlite3 prompt)
 - Run ```python3 main.py```
 
 **Dependencies:**
