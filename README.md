@@ -24,5 +24,8 @@ Hosted by the awesome [@Annwan](https://github.com/Annwan)
 - [x] Replace the use of discord-py-slash with discord-ext-slash 
 - [x] Replace the current .json save system with a SQL database
 - [x] Add ability to set one-time reminders (WIP)
-- [ ] Add ability to set repeated reminders
-- [ ] Add ability to set automatic welcoming and leaving messages for your server
+- [X] Add ability to set repeated reminders
+- [X] Add ability to set automatic welcoming and leaving messages for your server
+- [ ] Make reminders compatible with all timezones
+- [ ] Add ability to cancel reminders
+- [ ] Add ability to unset welcoming and leaving messages
