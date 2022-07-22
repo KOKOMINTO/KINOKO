@@ -1,10 +1,13 @@
 # Kinoko
-A lightweight reaction role Discord bot using slash commands, meant to be a multi-purpose bot in the future. You can also use it as a base for your own!
+A lightweight multi-purpose Discord bot, feel free to use this code for your own bot!
 
 Hosted by the awesome [@Annwan](https://github.com/Annwan)
 
 **Current available commands:**
 - /setreactionrole (message)(channel)(reaction)(role)
+- /setreminder (channel)(content)(time)(repeat)
+- /welcomeset (guild)(channel)(message)
+- /goodbyeset (guild)(channel)(message)
 
 **Compilation:**
 - Rename template.env as just .env and replace the token inside by a valid one
