@@ -26,7 +26,7 @@ Hosted by the awesome [@Annwan](https://github.com/Annwan)
 - [x] Add ability to set reaction roles with both default and custom emojis  
 - [x] Replace the use of discord-py-slash with discord-ext-slash 
 - [x] Replace the current .json save system with a SQL database
-- [x] Add ability to set one-time reminders (WIP)
+- [x] Add ability to set one-time reminders 
 - [X] Add ability to set repeated reminders
 - [X] Add ability to set automatic welcoming and leaving messages for your server
 - [ ] Make reminders compatible with all timezones
