@@ -6,8 +6,9 @@ Hosted by the awesome [@Annwan](https://github.com/Annwan)
 **Current available commands:**
 - /setreactionrole (message)(channel)(reaction)(role)
 - /setreminder (channel)(content)(time)(repeat)
-- /welcomeset (guild)(channel)(message)
-- /goodbyeset (guild)(channel)(message)
+- /welcomeset (channel)(message)
+- /goodbyeset (channel)(message)
+- /ping (for testing purposes)
 
 **Compilation:**
 - Rename template.env as just .env and replace the token inside by a valid one
