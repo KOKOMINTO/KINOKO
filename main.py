@@ -33,6 +33,10 @@ GoodbyeOpt.append(slash.Option(description='Leaving channel',type=7,required=Tru
 GoodbyeOpt.append(slash.Option(description='Goodbye message',type=3,required=True))
 
 @bot.slash_cmd()
+async def ping(ctx: slash.Context):
+    await ctx.respond("pong")
+    
+@bot.slash_cmd()
 async def welcomeset(ctx: slash.Context, channel: WelcomeOpt[0], message: WelcomeOpt[1]):
     """Set a welcoming message for new members"""
     cur.execute("INSERT OR REPLACE INTO Welcome VALUES (?,?,?);",(ctx.guild.id, channel.id, message))
