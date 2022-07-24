@@ -31,4 +31,4 @@ Hosted by the awesome [@Annwan](https://github.com/Annwan)
 - [X] Add ability to set automatic welcoming and leaving messages for your server
 - [ ] Make reminders compatible with all timezones
 - [ ] Add ability to cancel reminders
-- [ ] Add ability to unset welcoming and leaving messages
+- [X] Add ability to unset welcoming and leaving messages
