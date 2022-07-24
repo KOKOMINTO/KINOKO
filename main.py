@@ -34,6 +34,7 @@ GoodbyeOpt.append(slash.Option(description='Goodbye message',type=3,required=Tru
 
 @bot.slash_cmd()
 async def ping(ctx: slash.Context):
+    """pong""" 
     await ctx.respond("pong")
     
 @bot.slash_cmd()
